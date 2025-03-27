@@ -1,0 +1,112 @@
+/* Global Styles */
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body Styles */
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  
+  /* Logo Section */
+  .logo {
+    text-align: center;
+    background-color: whitesmoke;
+    color: burlywood;
+    padding: 0.5em;
+    font-size: 1.5em;
+  }
+  
+  /* Character Bar */
+  #character-bar {
+    height: 15vh;
+    background: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 3vh;
+    flex-wrap: wrap;
+  }
+  
+  #character-bar span {
+    padding: 1%;
+    height: 80%;
+    width: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    border-radius: 2em;
+    border: 1px solid burlywood;
+    cursor: pointer;
+    transition:  0.3s ease;
+    background-color: burlywood;
+  }
+  
+  /* Hover effect for character names */
+  #character-bar span:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Character Info Section */
+  .characterInfo {
+    height: 550px;
+    padding: 30px;
+    font-size: 1.5em;
+    border: black;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  /* Buttons */
+  input[type="submit"], button {
+    background-color: black;
+    color: red;
+    font-size: 18px;
+    border-radius: 6px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for buttons */
+  input[type="submit"]:hover, button:hover {
+    background-color: white;
+  }
+  input[type="text"]#votes {
+    color: white; /* White text in the votes input field */
+    background-color: wheat; /* Black background for the votes input field */
+}
+#vote-count {
+    color: white; /* Set the text color for vote count to white */
+    font-size: 2em; /* Adjust the font size as needed */
+    font-weight: bold; /* Optionally make it bold */
+}
+#total-vote-text {
+    color: white; /* White text for the total vote label */
+    background-color: white; /* White background for the total vote label */
+    font-size: 1.5em; /* Adjust the font size as needed */
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 20px; /* Add some spacing between vote text and count */
+}
+
+  
+  /* Input Styles */
+  input[type="text"], input[type="url"], input[type="number"] {
+    font-size: 3vh;
+    padding: 10px;
+    width: 80%;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  

@@ -1,0 +1,34 @@
+{
+  "characters": [
+    {
+      "id": "1",
+      "name": "kakashi Hatoke",
+      "image": "https://i.pinimg.com/474x/ab/57/e3/ab57e3f70930344a80374fae2b39dc8a.jpg",
+      "votes": 467
+    },
+    {
+      "id": "2",
+      "name": "sukuna",
+      "image": "https://i.pinimg.com/474x/ce/de/7a/cede7a101c0f0c8c3a3472ded35ed56b.jpg",
+      "votes": 234
+    },
+    {
+      "id": "3",
+      "name": "Gojo",
+      "image": "https://i.pinimg.com/474x/32/e5/2e/32e52ed7679b1a617e5a6403549cb336.jpg",
+      "votes": null
+    },
+    {
+      "id": "4",
+      "name": "Nobara",
+      "image": "https://i.pinimg.com/474x/4a/f2/d4/4af2d4b7e5a8fe619d85796ec3fb3afa.jpg",
+      "votes": 234
+    },
+    {
+      "id": "5",
+      "name": "Todo",
+      "image": "https://i.pinimg.com/736x/d6/f1/ed/d6f1ed3f4a17aab84e576366ee22e6a8.jpg",
+      "votes": 456
+    }
+  ]
+}
