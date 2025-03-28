@@ -1,6 +1,6 @@
 //fetch and display list of characters
 const renderCharacters = async () => {
-    const url = 'http://localhost:3000/characters'; // URL of your JSON server
+    const url = 'http://localhost:3001/characters'; // URL of your JSON server
     try {
       const response = await fetch(url);
       const characters = await response.json();
@@ -31,7 +31,7 @@ const renderCharacters = async () => {
   };
   // Display detailed character info when a name is clicked
 const displayCharacterDetails = async (id) => {
-    const url = `http://localhost:3000/characters/${id}`;
+    const url = `http://localhost:3001/characters/${id}`;
     try {
       const response = await fetch(url);
       const character = await response.json();
@@ -58,7 +58,7 @@ const displayCharacterDetails = async (id) => {
         
         // Update the vote count on the server
         try {
-          await fetch(`http://localhost:3000/characters/${id}`, {
+          await fetch(`http://localhost:3001/characters/${id}`, {
             method: 'PATCH',
             headers: {
               'Content-Type': 'application/json',
@@ -84,7 +84,7 @@ resetBtn.addEventListener('click', async () => {
         character.votes = 0;
         
         // Update the vote count on the server
-        await fetch(`http://localhost:3000/characters/${id}`, {
+        await fetch(`http://localhost:3001/characters/${id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',
@@ -98,6 +98,43 @@ resetBtn.addEventListener('click', async () => {
         console.error('Error resetting votes:', error);
     }
 });
+   // Add New Character
+const addNewCharacter = async (newCharacter) => {
+  const url = 'http://localhost:3001/characters'; // URL of your JSON server
+  try {
+      await fetch(url, {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(newCharacter),
+      });
+      renderCharacters(); // Refresh the character list
+  } catch (error) {
+      console.error('Error adding new character:', error);
+  }
+};
+
+// New Character Form Submission
+const newCharacterForm = document.getElementById('new-character-form');
+newCharacterForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const name = document.getElementById('new-character-name').value;
+  const image = document.getElementById('new-character-image').value;
+
+  // Create a new character object
+  const newCharacter = {
+      name,
+      image,
+      votes: 0, // Initialize votes to 0
+  };
+
+  await addNewCharacter(newCharacter);
+  
+  // Clear the form fields
+  newCharacterForm.reset();
+});
+
 
   
   // Initialize the app by rendering the characters

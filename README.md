@@ -70,3 +70,7 @@ Also contains styles for hover effects and responsive layout adjustments.
 If you're using Node.js, this file will manage your dependencies and scripts.
 
 If you're using a local server or any build tools (e.g., Webpack), you would include them in package.json
+
+
+spreadshit link
+https://docs.google.com/presentation/d/1FGcKRNXo6XUHzA090CcoMDsKxWmDZBw7pEAa7fLzslY/edit?usp=sharing

@@ -16,19 +16,25 @@
       "id": "3",
       "name": "Gojo",
       "image": "https://i.pinimg.com/474x/32/e5/2e/32e52ed7679b1a617e5a6403549cb336.jpg",
-      "votes": null
+      "votes": 467
     },
     {
       "id": "4",
       "name": "Nobara",
       "image": "https://i.pinimg.com/474x/4a/f2/d4/4af2d4b7e5a8fe619d85796ec3fb3afa.jpg",
-      "votes": 234
+      "votes": 467
     },
     {
       "id": "5",
       "name": "Todo",
       "image": "https://i.pinimg.com/736x/d6/f1/ed/d6f1ed3f4a17aab84e576366ee22e6a8.jpg",
-      "votes": 456
+      "votes": null
+    },
+    {
+      "id": "9e21",
+      "name": "Yami",
+      "image": "https://i.pinimg.com/736x/38/81/ed/3881edc84c41ffd3f30023aa56263386.jpg",
+      "votes": 0
     }
   ]
 }
