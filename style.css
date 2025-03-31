@@ -93,7 +93,7 @@ html {
 #total-vote-text {
     color: white; /* White text for the total vote label */
     background-color: white; /* White background for the total vote label */
-    font-size: 1.5em; /* Adjust the font size as needed */
+    font-size: 1.4em; /* Adjust the font size as needed */
     padding: 10px;
     border-radius: 6px;
     margin-top: 20px; /* Add some spacing between vote text and count */

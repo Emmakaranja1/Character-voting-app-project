@@ -1,6 +1,6 @@
 //fetch and display list of characters
 const renderCharacters = async () => {
-    const url = 'http://localhost:3001/characters'; // URL of your JSON server
+    const url = `https://emmakaranja1.github.io/Host_Api/ANIME.json`; // URL of your JSON server
     try {
       const response = await fetch(url);
       const characters = await response.json();
@@ -31,7 +31,7 @@ const renderCharacters = async () => {
   };
   // Display detailed character info when a name is clicked
 const displayCharacterDetails = async (id) => {
-    const url = `http://localhost:3001/characters/${id}`;
+    const url = `https://emmakaranja1.github.io/Host_Api/ANIME.json?id=${id}`;
     try {
       const response = await fetch(url);
       const character = await response.json();
@@ -58,7 +58,7 @@ const displayCharacterDetails = async (id) => {
         
         // Update the vote count on the server
         try {
-          await fetch(`http://localhost:3001/characters/${id}`, {
+          await fetch(`https://emmakaranja1.github.io/Host_Api/ANIME.json?id=${id}`, {
             method: 'PATCH',
             headers: {
               'Content-Type': 'application/json',
@@ -84,7 +84,7 @@ resetBtn.addEventListener('click', async () => {
         character.votes = 0;
         
         // Update the vote count on the server
-        await fetch(`http://localhost:3001/characters/${id}`, {
+        await fetch(`https://emmakaranja1.github.io/Host_Api/ANIME.json?id=${id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',
@@ -100,7 +100,7 @@ resetBtn.addEventListener('click', async () => {
 });
    // Add New Character
 const addNewCharacter = async (newCharacter) => {
-  const url = 'http://localhost:3001/characters'; // URL of your JSON server
+  const url = `https://emmakaranja1.github.io/Host_Api/ANIME.json`// URL of your JSON server
   try {
       await fetch(url, {
           method: 'POST',
